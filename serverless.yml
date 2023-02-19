@@ -3,7 +3,7 @@ frameworkVersion: '3'
 
 provider:
   name: aws
-  stage: local
+  stage: dev
   runtime: nodejs14.x
   region: us-east-1 
   environment:
@@ -24,7 +24,7 @@ plugins:
 custom:
   dynamodb:
     stages:
-      - local
+      - dev
     start:
       port: 8000
       inMemory: true
